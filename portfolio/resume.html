@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Public Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EBECF0;
+}
+
+.main-section{
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+
+.main-section .left-part{
+    width: 40%;
+    height: 100%;
+    background-color: #63adfc8e;
+    padding: 2.8rem;
+}
+
+.left-part .photo-container{
+    margin-bottom: 2.2rem;
+}
+
+.left-part .photo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1rem solid white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    margin: 1.4rem 0;
+}
+
+.contact-container{
+    margin-bottom: 2.2rem;
+}
+
+.contact-container .contact-list{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+
+.education-container{
+    margin-bottom: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.education-container .course{
+    margin-bottom: 1rem;
+    color: black;
+}
+ 
+.education-container .education-title{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: .3rem;
+}
+
+.education-container .college-name{
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    
+}
+
+.education-container .education-date{
+    font-size: 0.9rem;
+}
+
+.skills-container .skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.skills-container .skill .right-skill .outer-layer{
+    background-color: #BBBBBB;
+    height:0.4rem;
+    width: 5rem;
+    border-radius: 0.4rem;
+}
+
+.skills-container .skill .right-skill .inner-layer{
+    background-color: #3D3D3D;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.right-part{
+    padding: 2.8rem;
+}
+
+.right-part .banner{
+    font-family: 'Open Sans', sans-serif; 
+    color: black;
+    margin-bottom: 2.2rem;
+}
+
+.right-part .banner .firstname{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.right-part .banner .lastname{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-top: -1rem;
+}
+
+.right-part .banner .position{
+    letter-spacing: 0.3rem;
+    margin-top: -0.5rem;
+    font-size: 1.1rem;
+}
+
+.work-container{
+    margin-top: 5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.work-container .work:not(:last-child){
+    margin-bottom: 1.8rem;
+}
+
+.work-container .work .job-date{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.work-container .work .company-name{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: black;
+
+}
+
+.work-container .work .work-text{
+    color: black;
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1rem;
+}
+
+.references-container .references{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #4D4D4F;
+}
+
+.references-container .references .name{
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.references-container .references .company-name{
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.references-container .references .phone{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: black;
+}
+.references-container .references .phone p{
+    margin: 0.4rem 0;
+}
+
+.references-container .references .phone .phone-text{
+    font-weight: 600;
+}
+
+.text-left{
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <section class="main-section">
+        <div class="left-part">
+            <div class="photo-container">
+                <img src="profile.jpg" alt="">
+            </div>
+            <div class="contact-container">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-list">
+                    <div class="icon-container">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>Koperkhairne,Navi Mumbai 400709</p>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <div class="icon-container">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>purvasalpal03@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-list">
+                    <div class="icon-container">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>8104710146</p>
+                    </div>
+                </div>
+                <!-- <div class="contact-list">
+                    <div class="icon-container">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div class="contact-text">
+                        <p>@reallygreatsite</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="education-container">
+                <h2 class="title">Education</h2>
+                <div class="course">
+                    <h2 class="education-title">Bachelor of Computer Science</h2>
+                    <h5 class="college-name">Guru nanak Khalsa,Matunga</h5>
+                    <p class="education-date">2021 - 2024</p>
+                </div>
+                <!-- <div class="course">
+                    <h2 class="education-title">Course Studied</h2>
+                    <h5 class="college-name">University/College Details</h5>
+                    <p class="education-date">2006 - 2008</p>
+                </div>
+                <div class="course">
+                    <h2 class="education-title">Course Studied</h2>
+                    <h5 class="college-name">University/College Details</h5>
+                    <p class="education-date">2006 - 2008</p>
+                </div> -->
+            </div>
+
+            <div class="skills-container">
+                <h2 class="title">Skills</h2>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>SQL</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>HTML/CSS</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Java Script</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Python</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="left-skill">
+                        <p>Django</p>
+                    </div>
+                    <div class="right-skill">
+                        <div class="outer-layer">
+                            <div class="inner-layer" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="banner">
+                <h1 class="firstname">Purva</h1>
+                <h1 class="lastname">Sakpal</h1>
+                <p class="position">Full Stack Developer</p>
+            </div>
+
+            <div class="work-container ">
+                <h2 class="title text-left">work experience</h2>
+                <div class="work">
+                    <div class="job-date">
+                        <p class="job">Job position here</p>
+                        <p class="date">2019 - 2022</p>
+                    </div>
+                    <h2 class="company-name">Company Name l Location</h2>
+                    <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                        lorem
+                        at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                        elit at
+                        dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla volutpat dolor,
+                        hendrerit faucibus eros nibh ut nunc. Proin luctus urna i</p>
+                </div>
+
+                <div class="work">
+                    <div class="job-date">
+                        <p class="job">Job position here</p>
+                        <p class="date">2019 - 2022</p>
+                    </div>
+                    <h2 class="company-name">Company Name l Location</h2>
+                    <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                        lorem
+                        at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                        elit at
+                        dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla volutpat dolor,
+                        hendrerit faucibus eros nibh ut nunc. Proin luctus urna i</p>
+                </div>
+                <div class="work">
+                    <div class="job-date">
+                        <p class="job">Job position here</p>
+                        <p class="date">2019 - 2022</p>
+                    </div>
+                    <h2 class="company-name">Company Name l Location</h2>
+                    <p class="work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                        lorem
+                        at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                        elit at
+                        dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla volutpat dolor,
+                        hendrerit faucibus eros nibh ut nunc. Proin luctus urna i</p>
+                </div>
+            </div>
+
+            <div class="references-container">
+                <h2 class="title text-left">References</h2>
+                <div class="references">
+                    <div class="left-references">
+                        <h4 class="name">Name Surname</h4>
+                        <p class="company-name">Job position, Company Name</p>
+                        <div class="phone">
+                            <div class="phone-text">
+                                <p>Phone:</p>
+                                <p>Email:</p>
+                            </div>
+                            <div class="phone-number">
+                                <p>123-456-7890</p>
+                                <p>hello@reallygreatsite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-references">
+                        <h4 class="name">Name Surname</h4>
+                        <p class="company-name">Job position, Company Name</p>
+                        <div class="phone">
+                            <div class="phone-text">
+                                <p>Phone:</p>
+                                <p>Email:</p>
+                            </div>
+                            <div class="phone-number">
+                                <p>123-456-7890</p>
+                                <p>hello@reallygreatsite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
